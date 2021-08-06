@@ -21,10 +21,9 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String isbn, Set<Author> authors) {
+    public Book(String title, String isbn) {
         this.title = title;
         this.isbn = isbn;
-        this.authors = authors;
     }
 
     public String getTitle() {
@@ -43,7 +42,7 @@ public class Book {
         this.isbn = isbn;
     }
 
-    public Set<Author> getAuthors() {
+    public Set<Author> getAuthors(Author andrew) {
         return authors;
     }
 
