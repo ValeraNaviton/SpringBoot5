@@ -27,14 +27,16 @@ public class BootsTrapData implements CommandLineRunner {
         Book paskuda = new Book("How to be a teacher, who will never be forg...forgotten", "9650543");
 
         andrew.getBooks().add(paskuda);
-        paskuda.getAuthors(andrew);
+        paskuda.getAuthors().add(andrew);
 
         authorRepository.save(andrew);
         bookRepository.save(paskuda);
 
         Author baxanean = new Author("Dumitru", "Baxanean");
         Book mudak = new Book("How to be whoever you want and stay alive", "54325");
+
         baxanean.getBooks().add(mudak);
+        mudak.getAuthors().add(baxanean);
 
         authorRepository.save(baxanean);
         bookRepository.save(mudak);
